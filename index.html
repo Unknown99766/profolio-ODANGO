@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My porfilio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  
+  <div class="navbar">  
+    
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">☰</button> 
+      <div id="myDropdown" class="dropdown-content">
+        <a href="#">HOME</a>
+        <a href="#Abo">ABOUT</a>
+        <a href="#Pro">PROJECT</a>
+        <a href="#Con">CONTACT</a>
+      </div>
+    </div> 
+  </div>
+
+     <div class="main">
+        <div class="sc"></div>
+        <div class="home"> 
+          <h1> ALEXA CLARE O. ODANGO</h1> 
+          <a> Attending STI ALABANG</a>
+          
+        </div>
+        
+  <div class="about" id="Abo" >
+    <h1> ABOUT ME</h1>
+    <a> My course is IT (Information techonology), currently I am learning Programming.</a>
+    <a>Not skilled but I am willing to learn more about my course.</a>
+    <a> I love drawing and listening to music, I am also intrested into becoming a Game developer</a>
+    <h1> SKILLS </h1>
+    <a> Html</a>
+    <a> CSS </a>
+    <a> Java </a>
+    <a> Drawing </a>
+
+  </div>
+  <div class="Project" id="Pro">
+    <h1> PROJECT </h1>
+    <a> This website is where I mostly stored my Project </a>
+    
+    
+   <div class="project-link">
+    <a href="https://codepen.io/hart-ww" target="_blank">
+      <img src="codepen.png" alt="codepen">
+    </a>
+  </div>
+  </div>
+    <div class="contact" id="Con"> 
+      <h1> CONTACT</h1> 
+      <form class="contact-form" action="https://formsubmit.co/alexaodango50@gmail.com" method="POST">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">SEND</button>
+      
+      </form>
+
+      <footer>
+        <p>
+        <a> Portfolio Made By Alexa Clare O. Odango </a> </p>
+      </footer>
+    </div>    
+
+    <div class="background"> 
+  
+        
+    </div>
+   </div>
+    
+    
+</body>
+<script>
+   function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Optional: Close dropdown if clicking outside
+  window.onclick = function(e) {
+    if (!e.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName("dropdown-content");
+      for (let i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  };
+</script>
+</html>
