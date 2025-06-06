@@ -150,7 +150,8 @@
   }
 
   .contact-form input,
-  .contact-form textarea {
+  .contact-form textarea,
+  .form-control {
     width: 90%;
     max-width: 500px;
     padding: 12px 15px;
@@ -161,7 +162,7 @@
     box-sizing: border-box;
   }
 
-  .contact-form textarea {
+  .contact-form textarea, .form-control {
     min-height: 100px;
     resize: vertical;
   }
